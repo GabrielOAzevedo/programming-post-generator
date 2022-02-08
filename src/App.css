@@ -1,6 +1,9 @@
 .App {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "text result";
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "navbar navbar"
+    "text result";
   height: 100vh;
 }
