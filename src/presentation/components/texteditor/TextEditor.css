@@ -1,9 +1,0 @@
-.text-editor {
-  grid-area: text;
-  box-sizing: border-box;
-  height: 100%;
-}
-
-.text-editor > div {
-  height: 100%;
-}

@@ -14,7 +14,7 @@ import {
   PostTag,
   PostTags,
   Splitter,
-} from "./Components";
+} from "./styled";
 
 const initialText = `
 (function repeat() {
