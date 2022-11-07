@@ -1,11 +1,13 @@
-.bg {
+import styled from "styled-components";
+
+export const Background = styled.div`
   background-color: lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+`;
 
-.post-area {
+export const PostArea = styled.div`
   width: 400px;
   height: 400px;
   background-color: #7ed957;
@@ -16,9 +18,9 @@
   padding: 36px 48px;
   box-sizing: border-box;
   cursor: pointer;
-}
+`;
 
-.post-area h3 {
+export const PostHeader = styled.h3`
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -28,9 +30,9 @@
   margin-left: 8px;
   word-wrap: break-word;
   max-width: 200px;
-}
+`;
 
-.post-area .code-editor {
+export const CodeEditorWrapper = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 22px;
@@ -42,74 +44,63 @@
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
+`;
 
-.code-editor .code-editor-header {
+export const CodeEditorHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+`;
 
-.code-editor-header span {
+export const FileName = styled.span`
   color: white;
   font-family: "JetBrains Mono", monospace;
   font-size: 10px;
-}
+`;
 
-.code-editor hr {
+export const Dots = styled.div`
+  display: flex;
+`;
+
+export const Dot = styled.div`
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  margin: 2px;
+  background-color: ${(props) => props.color};
+`;
+
+export const Splitter = styled.hr`
   height: 1px;
   border: none;
   background-color: rgba(255, 255, 255, 0.3);
   margin: 14px 0px;
-}
+`;
 
-.content {
+export const PostContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   box-sizing: border-box;
-}
+`;
 
-.content > pre {
+export const PostCode = styled.pre`
   color: white;
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   font-weight: 600;
   margin: 0;
   white-space: pre-wrap;
-}
+`;
 
-.content > .tags {
+export const PostTags = styled.div`
   display: flex;
-}
+`;
 
-.tags .tag {
+export const PostTag = styled.span`
   color: #a0bdff;
   font-family: "Roboto", sans-serif;
   font-size: 10px;
   font-weight: 600;
-}
-
-.dots {
-  display: flex;
-}
-
-.dots .dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 14px;
-  margin: 2px;
-}
-
-.green {
-  background-color: #7ed957;
-}
-
-.red {
-  background-color: #ff5757;
-}
-
-.yellow {
-  background-color: #ffde59;
-}
+`;

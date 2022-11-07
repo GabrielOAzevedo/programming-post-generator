@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
 import { initialText } from "../application/code.context";
-import Design from "./components/design/Design";
 import Navbar from "./components/navbar/Navbar";
 import TextEditor from "./components/texteditor/TextEditor";
+import PostPreview from "./components/postpreview/PostPreview";
 
 function App() {
   const [text, setText] = useState(initialText);
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <TextEditor text={text} onChange={setText}></TextEditor>
-      <Design text={text}></Design>
+      <PostPreview text={text}></PostPreview>
     </div>
   );
 }
